@@ -1,0 +1,25 @@
+.btn {
+  @include animate(background-color color);
+
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.375;
+  letter-spacing: 1.5px;
+  min-width: 260px;
+  min-height: 62px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid $white;
+  color: $white;
+  text-decoration: none;
+
+  @include media('>=desktop') {
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
+  }
+}

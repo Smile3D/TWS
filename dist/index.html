@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test front end shop</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+	<link media="all" rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<header class="header">
+		<div class="container">
+			<div class="header__holder">
+				<strong class="logo">
+					<a href="#" class="logo__link">
+						<img src="img/logo.png" alt="Test front end shop">
+					</a>
+				</strong>
+				<button class="shop-basket">
+					<i class="icon-shopping-cart"></i>
+					<span class="shop-basket__counter">2</span>
+				</button>
+			</div>
+		</div>
+	</header>
+	<div class="content-holder container">
+		<nav class="navigation">
+			<div class="navigation__holder">
+				<button class="select-opener"><span class="text-btn">Все</span></button>
+				<ul class="navigation__list">
+					<li class="navigation__item navigation__item--active"><a href="#">Все</a></li>
+					<li class="navigation__item"><a href="#">Плащи</a></li>
+					<li class="navigation__item"><a href="#">Кроссовки</a></li>
+					<li class="navigation__item"><a href="#">Рубашки</a></li>
+					<li class="navigation__item"><a href="#">Брюки</a></li>
+				</ul>
+			</div>
+			<select name="filter">
+				<option value="value1">Сортировать</option>
+				<option value="value2" >От дорогих к дешевым</option>
+				<option value="value3">От дешевых к дорогим</option>
+				<option value="value4">Популярные</option>
+				<option value="value5">Новые</option>
+			</select>
+		</nav>
+		<main class="products-grid">
+			<figure class="product-cart">
+				<div class="swiper-container product-cart-gallery gallery-1">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide product-cart-gallery__slide">
+							<img src="img/img-01.jpg" alt="image description" class="product-cart-gallery__main-image">
+						</div>
+						<div class="swiper-slide product-cart-gallery__slide">
+							<img src="img/img-01.jpg" alt="image description" class="product-cart-gallery__main-image">
+						</div>
+						<div class="swiper-slide product-cart-gallery__slide">
+							<img src="img/img-01.jpg" alt="image description" class="product-cart-gallery__main-image">
+						</div>
+						<div class="swiper-slide product-cart-gallery__slide">
+							<img src="img/img-01.jpg" alt="image description" class="product-cart-gallery__main-image">
+						</div>
+						<div class="swiper-slide product-cart-gallery__slide">
+							<img src="img/img-01.jpg" alt="image description" class="product-cart-gallery__main-image">
+						</div>
+						<div class="swiper-slide product-cart-gallery__slide">
+							<img src="img/img-01.jpg" alt="image description" class="product-cart-gallery__main-image">
+						</div>
+						<div class="swiper-slide product-cart-gallery__slide">
+							<img src="img/img-01.jpg" alt="image description" class="product-cart-gallery__main-image">
+						</div>
+					</div>
+				</div>
+				<div class="gallery-thumbs-holder">
+					<div class="swiper-container gallery-thumbs thumbs-1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide gallery-thumbs__slide">
+								<img src="img/img-01.jpg" alt="image description" class="gallery-thumbs__img">
+							</div>
+							<div class="swiper-slide gallery-thumbs__slide">
+								<img src="img/img-01.jpg" alt="image description" class="gallery-thumbs__img">
+							</div>
+							<div class="swiper-slide gallery-thumbs__slide">
+								<img src="img/img-01.jpg" alt="image description" class="gallery-thumbs__img">
+							</div>
+							<div class="swiper-slide gallery-thumbs__slide">
+								<img src="img/img-01.jpg" alt="image description" class="gallery-thumbs__img">
+							</div>
+							<div class="swiper-slide gallery-thumbs__slide">
+								<img src="img/img-01.jpg" alt="image description" class="gallery-thumbs__img">
+							</div>
+							<div class="swiper-slide gallery-thumbs__slide">
+								<img src="img/img-01.jpg" alt="image description" class="gallery-thumbs__img">
+							</div>
+							<div class="swiper-slide gallery-thumbs__slide">
+								<img src="img/img-01.jpg" alt="image description" class="gallery-thumbs__img">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next swiper-button"><i class="icon-arrow-right"></i></div>
+					<div class="swiper-button-prev swiper-button"><i class="icon-arrow-left"></i></div>
+				</div>
+				<figurecaption class="product-cart__description">
+					<div class="product-cart__category">Рубашки</div>
+					<a href="#" class="product-cart__name-product">Рубашка на пуговицах</a>
+					<strong class="product-cart__price">$170</strong>
+					<div class="product-cart__stock">На складе: 20</div>
+				</figurecaption>
+			</figure>
+			<figure class="product-cart">
+				<div class="swiper-container product-cart-gallery">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide product-cart-gallery__slide">
+							<img src="img/img-02.jpg" alt="image description" class="product-cart-gallery__main-image">
+						</div>
+					</div>
+				</div>
+				<figurecaption class="product-cart__description">
+					<div class="product-cart__category">Рубашки</div>
+					<a href="#" class="product-cart__name-product">Рубашка на пуговицах</a>
+					<strong class="product-cart__price">$170</strong>
+					<div class="product-cart__stock">На складе: 20</div>
+				</figurecaption>
+			</figure>
+			<figure class="product-cart">
+				<div class="swiper-container product-cart-gallery">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide product-cart-gallery__slide">
+							<img src="img/img-01.jpg" alt="image description" class="product-cart-gallery__main-image">
+						</div>
+					</div>
+				</div>
+				<figurecaption class="product-cart__description">
+					<div class="product-cart__category">Рубашки</div>
+					<a href="#" class="product-cart__name-product">Рубашка на пуговицах</a>
+					<strong class="product-cart__price">$170</strong>
+					<div class="product-cart__stock">На складе: 20</div>
+				</figurecaption>
+			</figure>
+			<figure class="product-cart">
+				<div class="swiper-container product-cart-gallery">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide product-cart-gallery__slide">
+							<img src="img/img-04.jpg" alt="image description" class="product-cart-gallery__main-image">
+						</div>
+					</div>
+				</div>
+				<figurecaption class="product-cart__description">
+					<div class="product-cart__category">Рубашки</div>
+					<a href="#" class="product-cart__name-product">Рубашка на пуговицах</a>
+					<strong class="product-cart__price">$170</strong>
+					<div class="product-cart__stock">На складе: 20</div>
+				</figurecaption>
+			</figure>
+			<figure class="product-cart">
+				<div class="swiper-container product-cart-gallery">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide product-cart-gallery__slide">
+							<img src="img/img-05.jpg" alt="image description" class="product-cart-gallery__main-image">
+						</div>
+					</div>
+				</div>
+				<figurecaption class="product-cart__description">
+					<div class="product-cart__category">Рубашки</div>
+					<a href="#" class="product-cart__name-product">Рубашка на пуговицах</a>
+					<strong class="product-cart__price">$170</strong>
+					<div class="product-cart__stock">На складе: 20</div>
+				</figurecaption>
+			</figure>
+			<figure class="product-cart">
+				<div class="swiper-container product-cart-gallery">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide product-cart-gallery__slide">
+							<img src="img/img-06.jpg" alt="image description" class="product-cart-gallery__main-image">
+						</div>
+					</div>
+				</div>
+				<figurecaption class="product-cart__description">
+					<div class="product-cart__category">Рубашки</div>
+					<a href="#" class="product-cart__name-product">Рубашка на пуговицах</a>
+					<strong class="product-cart__price">$170</strong>
+					<div class="product-cart__stock">На складе: 20</div>
+				</figurecaption>
+			</figure>
+		</main>
+	</div>
+	<footer class="footer"></footer>
+</div>
+<script src="js/common.min.js"></script>
+</body>
+
+</html>

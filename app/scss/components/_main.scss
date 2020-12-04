@@ -1,0 +1,17 @@
+.products-grid {
+	@include media('>=576px') {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(180px, 1fr));
+		grid-gap: 15px;
+	}
+
+	@include media('>=desktop') {
+		grid-template-columns: repeat(3, minmax(180px, 1fr));
+	}
+
+	@include media('>=widescreen') {
+		grid-template-columns: repeat(3, minmax(180px, 280px));
+		row-gap: 30px;
+		column-gap: 79px;
+	}
+}

@@ -1,0 +1,119 @@
+.navigation {
+  @include media('>=tablet') {
+    padding: 4px 0 0 8px;
+  }
+
+  @include media('<480px') {
+    text-align: center;
+    margin: 0 0 10px;
+  }
+
+  @include media('>=480px', '<tablet') {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 10px;
+  }
+
+  &__holder {
+    @include media('>=480px', '<tablet') {
+      position: relative;
+      min-width: 200px;
+      margin: 0;
+    }
+
+    &.select-open {
+      .navigation__list {
+        display: block;
+      }
+    }
+  }
+
+  &__list {
+    @extend %listreset;
+
+    @include media('<tablet') {
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      text-align: center;
+      background-color: #fff;
+      padding: 20px 10px 10px 10px;
+    }
+
+    a {
+      @include animate(text-shadow);
+
+      text-decoration: none;
+      color: $black;
+      text-transform: uppercase;
+      letter-spacing: -.6px;
+
+      @include media('>=desktop') {
+        &:hover {
+          text-shadow: 0 0 1px rgba(0, 0, 0, 1);
+        }
+      }
+    }
+  }
+
+  &__item {
+    margin: 0 0 15px;
+
+    @include media('>=tablet') {
+      margin: 0 0 25px;
+    }
+
+    &--active {
+      text-shadow: 0 0 1px rgba(0, 0, 0, 1);
+    }
+  }
+}
+
+.text-btn {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+
+	&:before {
+		font-family: 'icomoon' !important;
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 22px;
+		line-height: 18px;
+		color: #acacac;
+	}
+}
+
+.select-opener {
+  display: none;
+  font-size: 14px;
+  min-height: 40px;
+  padding: 4px 15px;
+  width: 100%;
+  background-color: $black;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+
+  @include media('<480px') {
+    margin: 0 0 10px;
+  }
+
+  .text-btn {
+    &:before {
+      content: "\e9bd";
+    }
+  }
+
+  @include media ('<tablet') {
+    display: block;
+  }
+}

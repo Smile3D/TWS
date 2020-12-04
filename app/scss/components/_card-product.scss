@@ -1,0 +1,157 @@
+.swiper-container {
+  height: 390px;
+}
+
+.product-cart {
+  @include animate(box-shadow);
+
+  position: relative;
+
+  &:hover {
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.25);
+
+    .gallery-thumbs-holder {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__description {
+    display: block;
+    padding: 15px 20px 20px;
+  }
+
+  &__category {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .6px;
+    color: $gray;
+    text-transform: uppercase;
+  }
+
+  &__name-product {
+    @include animate(color);
+
+    font-size: 16px;
+    text-decoration: none;
+    color: $black;
+    display: inline-block;
+    margin: 0 0 10px;
+
+    &:hover {
+      color: $gray;
+    }
+  }
+
+  &__price {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+  }
+
+  &__stock {
+    font-size: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $gray;
+  }
+
+  &__price,
+  &__stock {
+    text-align: center;
+  }
+}
+
+.product-cart-gallery {
+  &__slide {
+    height: 390px;
+  }
+
+  &__main-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+  }
+}
+
+.gallery-thumbs-holder {
+  @include animate(opacity visibility);
+
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  bottom: calc(0px + 123px);
+  width: 100%;
+  padding: 10px 10px 0;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.gallery-thumbs {
+  width: 220px;
+  height: 40px;
+  box-sizing: border-box;
+
+  &__slide {
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      &:after {
+        box-shadow: inset 0 0 0 2px rgba(0,0,0,1);
+      }
+    }
+
+    &:after {
+      @include animate(box-shadow);
+
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.gallery-thumbs .swiper-slide {
+  width: 40px !important;
+  height: 40px;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active:after {
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,1);
+}
+
+.swiper-button {
+  position: absolute;
+  top: 59%;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  i {
+    @include animate(color);
+    
+    color: #d8d8d8;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+.swiper-button-next {
+  right: 7px;
+}

@@ -1,0 +1,28 @@
+.wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1254px;
+	margin: 0 auto;
+	padding: 0 15px;
+
+	&.content-holder {
+		padding: 40px 15px 0;
+
+		@include media('>=tablet') {
+			display: grid;
+			grid-template-columns: 226px 1fr;
+		}
+	}
+}
+
+button {
+	background-color: transparent;
+	outline: none;
+}
+
+figure {
+	margin: 0;
+}
